@@ -3,25 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mzansi Fast Foods - South Africa's best fast food menu. Boerie Burgers, Flame-Grilled Chicken, Milkshakes & more. Fast, fresh & affordable.">
-  <meta name="keywords" content="fast food south africa, boerie burger, peri peri chicken, mzansi meals, south african fast food">
-  <title>Mzansi Fast Foods | Best Fast Food Menu in South Africa</title>
-  <link rel="canonical" href="https://mzansifastfoods.co.za">
-  <meta property="og:title" content="Mzansi Fast Foods - South Africa's Favourite Fast Food">
-  <meta property="og:description" content="Order Boerie Burgers, Flame-Grilled Chicken and more online.">
-  <meta property="og:image" content="https://picsum.photos/id/1080/1200/630">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FastFoodRestaurant",
-    "name": "Mzansi Fast Foods",
-    "address": { "@type": "PostalAddress", "addressCountry": "ZA" },
-    "servesCuisine": ["South African", "Fast Food"],
-    "priceRange": "$$"
-  }
-  </script>
+  <meta name="description" content="Mzansi Fast Foods - South Africa's best fast food menu with Boerie Burgers, Flame-Grilled Chicken & more.">
+  <title>Mzansi Fast Foods | South Africa's Favourite Fast Food</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,33 +14,42 @@
       <nav>
         <a href="#" onclick="showSection('menu')">Menu</a>
         <a href="#" onclick="showSection('locations')">Restaurants</a>
-        <a href="http://mcdocoffeemenu.com/" target="_blank" rel="noopener noreferrer">Coffee</a>
+        <a href="http://mcdocoffeemenu.com/" target="_blank" rel="noopener noreferrer">Coffee Menu</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>I'm Lovin' Mzansi</h1>
-      <p>Flame-grilled, fresh & proudly South African</p>
+      <h1>Proudly South African Fast Food</h1>
+      <p>Boerie Burgers • Flame-Grilled Chicken • Mzansi Flavours</p>
+      <button onclick="document.getElementById('menu-section').scrollIntoView({behavior:'smooth'})" class="cta-btn">Browse Menu</button>
     </div>
   </section>
 
   <main class="container">
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Search our menu..." onkeyup="filterMenu()">
-      <div id="categoryFilters" class="category-filters"></div>
-    </div>
-    <div id="menuGrid" class="menu-grid"></div>
-
-    <section class="locations">
-      <h2>Find a Mzansi Near You</h2>
-      <div class="locations-grid">
-        <div class="location-card">Johannesburg • Sandton City</div>
-        <div class="location-card">Cape Town • V&A Waterfront</div>
-        <div class="location-card">Durban • Gateway Theatre</div>
+    <section id="menu-section">
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search menu items..." onkeyup="filterMenu()">
+        <div id="categoryFilters" class="category-filters"></div>
       </div>
-      <a href="https://hungrymzansi.co.za/" target="_blank" rel="noopener noreferrer" class="external-btn">Discover more restaurants on Hungry Mzansi →</a>
+      <div id="menuGrid" class="menu-grid"></div>
+    </section>
+
+    <section id="locations-section" class="locations">
+      <h2>Find Us Across Mzansi</h2>
+      <div class="locations-grid">
+        <div class="location-card">
+          <strong>Johannesburg</strong><br>Sandton City
+        </div>
+        <div class="location-card">
+          <strong>Cape Town</strong><br>V&A Waterfront
+        </div>
+        <div class="location-card">
+          <strong>Durban</strong><br>Gateway Theatre
+        </div>
+      </div>
+      <a href="https://hungrymzansi.co.za/" target="_blank" rel="noopener noreferrer" class="external-link">Browse all locations on Hungry Mzansi →</a>
     </section>
   </main>
 
